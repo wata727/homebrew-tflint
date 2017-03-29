@@ -6,7 +6,8 @@ class Tflint < Formula
 
   depends_on "glide" => :build
   depends_on "go" => :build
-  depends_on "terraform"
+  depends_on "terraform" => [:recommended]
+  depends_on "tfenv" => [:optional]
 
   def install
     ENV["GOPATH"] = buildpath
