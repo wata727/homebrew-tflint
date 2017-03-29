@@ -3,6 +3,7 @@ class Tflint < Formula
   homepage "https://github.com/wata727/tflint"
   url "https://github.com/wata727/tflint/archive/v0.3.1.tar.gz"
   sha256 "63b58673b7a8535138fdd03c5fc40115e87f229aa14ed25ad7bf922c80676d74"
+  revision 1
 
   depends_on "glide" => :build
   depends_on "go" => :build
