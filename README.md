@@ -5,6 +5,8 @@
 ## Usage
 
 ```sh
-$ brew tap hakamadare/tflint
+$ brew tap wata727/tflint
 $ brew install tflint
 ```
+## Thanks to
+[@hakamadare](https://github.com/hakamadare)
