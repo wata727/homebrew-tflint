@@ -1,4 +1,5 @@
 os: osx
 script:
+  - brew update
   - brew audit --strict Formula/tflint.rb
   - brew install --verbose --build-bottle Formula/tflint.rb
