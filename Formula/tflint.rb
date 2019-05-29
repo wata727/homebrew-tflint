@@ -1,21 +1,15 @@
 class Tflint < Formula
   desc "Terraform linter"
   homepage "https://github.com/wata727/tflint"
-  url "https://github.com/wata727/tflint/archive/v0.8.0.tar.gz"
-  sha256 "6d384360e7ea6dba6861b7f6628c5eccba32401d18a0eb3aa2a8c2eb5134a9d7"
+  url "https://github.com/wata727/tflint/archive/v0.8.1.tar.gz"
+  sha256 "b9d6ed1b368f52a7a050b6ad989b196f1acf2a6765553b315d3fe8eb29ce8cb8"
 
-  depends_on "dep" => :build
   depends_on "go" => :build
 
   def install
-    ENV["GOPATH"] = buildpath
-    (buildpath/"src/github.com/wata727/tflint").install buildpath.children
-    cd "src/github.com/wata727/tflint" do
-      system "dep", "ensure", "-vendor-only"
-      system "go", "build", "-o", "dist/tflint"
-
-      bin.install "dist/tflint"
-    end
+    ENV["GO111MODULE"] = "on"
+    system "go", "build", "-o", "dist/tflint"
+    bin.install "dist/tflint"
   end
 
   test do
