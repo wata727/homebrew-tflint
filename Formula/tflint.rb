@@ -1,8 +1,8 @@
 class Tflint < Formula
   desc "Terraform linter"
   homepage "https://github.com/wata727/tflint"
-  url "https://github.com/wata727/tflint/archive/v0.8.3.tar.gz"
-  sha256 "288e281a54514b866b99e7f42d961c00fa2543b2d7436b3ed94728e02eb70af7"
+  url "https://github.com/wata727/tflint/archive/v0.9.0.tar.gz"
+  sha256 "349bb353a0b182dbb112ce1a8c5ee23eed7d7c4e042b7fbdc273b0c09e700569"
 
   depends_on "go" => :build
 
