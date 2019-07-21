@@ -1,12 +1,4 @@
-# homebrew-tflint
+# The formula is now hosted by `homebrew/core` 🎉
 
-[Homebrew](https://brew.sh) formula for [tflint](https://github.com/wata727/tflint).
+You don't need to tap the formula. If you already tap the formula, migrate to the core.
 
-## Usage
-
-```sh
-$ brew tap wata727/tflint
-$ brew install tflint
-```
-## Thanks to
-[@hakamadare](https://github.com/hakamadare)
